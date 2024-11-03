@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightblue;
+  padding: 9px;
+}
+nav input{
+  width: 250px;
+  text-decoration: none;
+  padding: 9px;
+  font-size: 18px;
+  border: none;
+}
+.searchBar{
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+nav button{
+  width: 70px;
+  height: 38px;
+  background-color: blue;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+nav ul{
+  display: flex;
+  gap: 11px;
+
+}
+.cardContainer{
+  display: flex;
+  justify-content: center;
+  gap:41px;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  width: 320px;
+  box-shadow: 0px 4px 4px 4px rgb(255, 255, 255);
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 21px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.card img{
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+.card .title{
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: -7px;
+}
+.card .title:hover{
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.card .content{
+  padding: 9px;
+}
+.card button{
+  background-color: rgb(29, 162, 214);
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 28px;
+  color: white;
+  font-size: 13px;
+  border-radius: 2px;
+}
+.categoryBtn{
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+}
+.categoryBtn button{
+  gap: 11px;
+  width: 130px;
+  height: 33px;
+  background-color: rgb(255, 108, 108);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+}
+
+
+.head{
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+}
+/* mohammed maaz */
+/* Newsapp.css */
+
+/* General styles for the navigation bar */
+nav {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on small screens */
+  align-items: center; /* Center-align items */
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 15px;
+  list-style: none;
+  justify-content: center; /* Center-align the list */
+  margin: 10px 0; /* Add margin for spacing */
+}
+
+ul a {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* Responsive search bar */
+.searchBar {
+  display: flex;
+  flex-direction: column; /* Stack input and button on small screens */
+  align-items: center;
+  margin-top: 10px; /* Add some spacing */
+}
+
+.searchBar input {
+  padding: 8px;
+  margin-bottom: 5px; /* Space between input and button */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 80%; /* Make input responsive */
+  max-width: 300px; /* Set max width */
+}
+
+.searchBar button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 80%; /* Make button responsive */
+  max-width: 300px; /* Set max width */
+}
+
+/* Category button styles */
+/* .categoryBtn {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+  justify-content: center; /* Center-align buttons */
+  gap: 10px;
+} */
+
+.categoryBtn button {
+  padding: 10px 15px;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+Responsive adjustments
+.categoryBtn button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.head {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  nav {
+      flex-direction: row; /* Horizontal layout on larger screens */
+      justify-content: space-between; /* Space items evenly */
+  }
+
+  .searchBar {
+      flex-direction: row; /* Horizontal layout for search bar */
+      justify-content: center; /* Center-align items */
+  }
+
+  .searchBar input {
+      margin-bottom: 0; /* Remove margin on larger screens */
+      margin-right: 5px; /* Space between input and button */
+  }
+
+  .searchBar button {
+      margin-left: 5px; /* Space between input and button */
+  }
+
+  ul {
+      justify-content: flex-start; /* Align to the left on larger screens */
+  }
+}
